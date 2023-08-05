@@ -1,5 +1,5 @@
 ---
-title: "clinical_trials_101"
+title: "Clinical Trials 101 Course"
 ---
 
 This is a Quarto website.
