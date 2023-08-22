@@ -1,24 +1,5 @@
----
-title: "Clinical Trials 101 Course"
----
-
-An analysis of a randomized controlled trial of ketorolac + metoclopramide versus metoclopramide alone.
-
-```{r}
-#| echo: false
-#| output: false
-#| warning: false
-
-library(rsconnect)
-library(tidyverse)
 library(consort)
-library(skimr)
-source("keto_migraine_rct.R")
-
-```
-
-```{r}
-
+library(tidyverse)
 set.seed(1001)
 N <- 645
 
@@ -59,5 +40,3 @@ out <- consort_plot(data = df,
 
 plot(out)
 
-
-```
