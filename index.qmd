@@ -2,6 +2,48 @@
 title: "Clinical Trials 101 Course"
 ---
 
+## Study Objectives
+
+### 1.1 Primary Objectives
+
+#### 1.1.1 Objectives
+
+(1)  To evaluate the efficacy of intravenous ketorolac compared to placebo in the treatment of acute migraine in combination with intravenous 0.9% normal saline and metoclopramide as measured by the **mean reduction in pain intensity on the Visual Analogue Scale (VAS)** in children or adolescents between 5 and 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+(2)  To evaluate the **safety and tolerability** of intravenous ketorolac and metoclopramide in the treatment of acute migraine in children or adolescents between 5 and 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+#### 1.1.2 Hypothesis
+
+(1)  Intravenous ketorolac administered in combination with metoclopramide and 0.9% normal saline is superior to intravenous metoclopramide and 0.9% normal saline alone as measured by the mean reduction in pain intensity on the Visual Analogue Scale (VAS) at 2 hours in children 5 to 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+### 1.2 Secondary Objectives
+
+#### 1.2.1 Objectives 
+
+(1)  To evaluate the efficacy of intravenous ketorolac compared to placebo in the treatment of acute migraine in combination with intravenous 0.9% normal saline and metoclopramide as measured by **pain freedom** **(VAS=0) at 2 hours** in children or adolescents between 5 and 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+(2)  To evaluate the efficacy of intravenous ketorolac compared to placebo in the treatment of acute migraine in combination with intravenous 0.9% normal saline and metoclopramide as measured by **headache relief defined as a 33% reduction on the VAS at 2 hours** in children or adolescents between 5 and 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+(3)  To evaluate the efficacy of intravenous ketorolac compared to placebo in the treatment of acute migraine in combination with intravenous 0.9% normal saline and metoclopramide as measured by **headache relief defined as a 50% reduction on the VAS at 2 hours** in children or adolescents between 5 and 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+#### 1.2.2 Hypothesis
+
+(1)  Intravenous ketorolac administered in combination with metoclopramide and 0.9% normal saline is superior to intravenous metoclopramide and 0.9% normal saline alone as measured by the secondary outcome measures described above in children 5 to 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+### 1.3 Tertiary objectives
+
+(1)  To evaluate the efficacy of intravenous ketorolac compared to placebo in the treatment of acute migraine in combination with intravenous 0.9% normal saline and metoclopramide as measured by **sustained pain-freedom (no recurrence of headache within 24 hours** if pain was completely eliminated (VAS = 0) prior to discharge) in children or adolescents between 5 and 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+\(1\) To evaluate the efficacy of intravenous ketorolac compared to placebo in the treatment of acute migraine in combination with intravenous 0.9% normal saline and metoclopramide as measured by **sustained headache relief (no increase in headache by 33% on the VAS or 50% on the VAS if headache relief was initially achieved)** in children or adolescents between 5 and 17 years of age who present to the ED and have not achieved a satisfactory response from usual home therapy or at least one oral analgesic.
+
+(2) To explore the concept of a **minimum clinically significant difference** at 2 hours correlating the VAS and patient-centric outcomes including (1) \"I would take the medication again\" (19) (2) \"my headache is a bit better/worse\" and \"my headache is a lot better/worse\" (20), and (3) the treating physicians subjective assessment of efficacy all assessed at the 2 hour time point.
+
+(3) To compare the VAS and Faces Pain Scale -- Revised (FPS-R) in children \< 8 years.
+
+\(4\) A descriptive economic analysis of ED migraine treatment.
+
+## Results
+
 An analysis of a randomized controlled trial of ketorolac + metoclopramide versus metoclopramide alone.
 
 ```{r}
@@ -19,7 +61,8 @@ source("keto_migraine_rct.R")
 
 ```{r}
 #| echo: false
-
+#| label: consort-plot
+#| fig-cap: "CONSORT Diagram"
 set.seed(1001)
 N <- 645
 

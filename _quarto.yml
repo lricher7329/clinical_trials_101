@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "clinical_trials_101"
+  title: "Clinical Trials 101"
   navbar:
     left:
       - href: index.qmd
