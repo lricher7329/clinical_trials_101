@@ -18,6 +18,7 @@ source("keto_migraine_rct.R")
 ```
 
 ```{r}
+#| echo: false
 
 set.seed(1001)
 N <- 645
@@ -32,23 +33,13 @@ exc1[randomized=="0"] <- sample(c("Not meeting inclusion criteria", "Declined to
 
 exc2 <- rep(NA, N)
 
-
-
 # randomized[is.na(exc1)] <- "1"
 
-
 df <- tibble(sid,randomized,exc1)
-
-  
-# df <- df %>%
-#   mutate(randomized_yn = ifelse(!is.na(randomized), "1", "0"))
-
 
 df_r <- df %>%
   filter(randomized=="1") %>%
   mutate(id=row_number())
-
-
 
 out <- consort_plot(data = df,
                     orders = c(sid = "Assessed for eligibility",
